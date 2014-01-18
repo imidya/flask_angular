@@ -1,23 +1,33 @@
 <!doctype html>
-<html lang="en" ng-app="FlaskAngular">
-<head>
-	<meta charset="UTF-8">
-	<title>Flask Angular</title>
-	<link rel="stylesheet" type="text/css" href="/static/css/semantic/semantic.css">
-	<script src="/static/js/libs/semantic/semantic.js"></script>
-	<script src="/static/js/libs/jquery/jquery.js"></script>
-	<script src="/static/js/libs/angular/angular.min.js"></script>
-</head>
-<body>
-	<nav class="ui menu">
-		<a class="item">Home</a>
-	</nav>
-	<div id="content">
-		<div ng-view></div>
-	</div>
-	<footer>
-		<div class="ui section divider"></div>
-		<span>By Sam Huang</span>
-	</footer>
-</body>
+<html ng-app="FlaskAngularApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flask Angular</title>
+		<link rel="stylesheet" type="text/css" href="/static/css/semantic/semantic.css">
+		<!-- angular -->
+		<script src="/static/js/libs/angular/angular.js"></script>
+		<script src="/static/js/libs/angular/angular-route.js"></script>
+
+		<!-- jquery -->
+		<script src="/static/js/libs/jquery/jquery.js"></script>
+
+		<!-- semantic -->
+		<script src="/static/js/libs/semantic/semantic.js"></script>
+
+		<!-- Flask_Angular -->
+		<script src="/static/js/app.js"></script>
+		<script src="/static/js/controllers.js"></script>
+	</head>
+	<body>
+		<nav class="ui menu">
+			<a class="item">Home</a>
+		</nav>
+		<div id="content">
+			<div ng-view></div>
+		</div>
+		<footer>
+			<div class="ui section divider"></div>
+			<span>By Sam Huang</span>
+		</footer>
+	</body>
 </html>

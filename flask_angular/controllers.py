@@ -6,6 +6,7 @@ from flask_angular import app
 def index():
 	return render_template('index.html')
 
+@app.route('/<resource>')
 @app.route('/<resource>/<id>')
 def angular(resource, id):
 	return render_template('index.html')
