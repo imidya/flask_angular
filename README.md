@@ -1,4 +1,4 @@
-flask_angular (Not Finish Yet!)
+Flask AngularJs
 =============
 
 A skeleton template for Python Flask framework and Angularjs
